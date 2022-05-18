@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+	<script src="./script.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="container bg">
+          	<h1>Calculadora de custo energético doméstico por aparelho</h1>
+          	<div class="section">
+            	<h2>Potência</h2>
+				<p>Insira a potência em watt (<em>W</em>) ou selecione eletrodoméstico para obter um valor médio.</p>
+				<div>
+					<label class="potencia" for="potencia">
+						<input id="potencia" type="number" placeholder="1000" min="0">
+						<span class="unit"><em>W</em></span> 
+					</label>
+					<span class="divider">ou</span>
+					<div id="dropdown" class="dropdown">
+					  <button class="dropbtn">Selecionar</button>
+						<div class="dropdown-content">
+							  <a href="#" data-device>Placa elétrica</a>
+							  <a href="#" data-device>Máquina de Café</a>
+							  <a href="#" data-device>Frigorífico</a>
+							  <a href="#" data-device>Máquina da louça</a>
+							  <a href="#" data-device>Aspirador</a>
+							  <a href="#" data-device>Televisão</a>
+							  <a href="#" data-device>Aparelhagem de som</a>
+							  <a href="#" data-device>Computador</a>
+							  <a href="#" data-device>Impressora a laser</a>
+							  <a href="#" data-device>Secador de cabelo</a>
+							  <a href="#" data-device>Radiador</a>
+						</div>
+					</div>
+            	</div>
+          	</div>
+			  <div class="section">
+				<h2>Tempo por dia</h2>
+				<p>Quantas hora o aparelho está ligado por dia?</p>
+				<div>
+					<label class="tempo" for="tempo">
+						<input id="tempo" type="number" placeholder="24" min="0" max="24">
+						<span class="unit"><em>h</em></span>
+					</label>
+				</div>
+			</div>
+        	<div class="section">
+				<h2>Preço por <em>kWh</em></h2>
+				<p>Coloque aqui o preço por 1 <em>kWh</em> de energia.</p>
+				<label class="preco" for="preco">
+					<input id="preco" type="number" placeholder="0.19270" min="0">
+					<span class="unit"><em>€</em></span>
+				</label>
+        	</div>
+			<div class="calc">
+				<button id="calcular">Calcular</button> 
+			</div>
+			<div class="credits">
+				<p>
+					<strong>Nota: </strong>Esta calculadora não dispensa a consulta dos valores que constam na fatura da luz, que podem diferir em função do contrato estabelecido por cada cliente. Para mais informações, sugerimos que consulte, por exemplo, a página da <a target="blank" href="//www.erse.pt">ERSE</a>.
+				</p>
+				<br>
+				<p>
+					Clube de programação e robótica da ESQP 2022
+				</p>
+				<span>Feito por Pedro Silva 12ºC</span>
+				
+			</div>
+        </div>
+		<div id="results" class="container bg results">
+
+		</div>
+    </main>
+</body>
+</html>
