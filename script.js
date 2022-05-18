@@ -76,23 +76,23 @@ calcularButton.addEventListener("click", e => {
             </tr>
             <tr>
                 <td>Diário</td>
-                <td>${KWH_STRING*1} kWh</td>
+                <td>${(KWH_STRING*1).toFixed(2)} kWh</td>
                 <td>${(PRICE_STRING*1).toFixed(2)} €</td>
             </tr>
             <tr>
                 <td>Semanal</td>
-                <td>${KWH_STRING*7} kWh</td>
+                <td>${(KWH_STRING*7).toFixed(2)} kWh</td>
                 <td>${(PRICE_STRING*7).toFixed(2)} €</td>
             </tr>
             <tr>
                 <td>Mensal</td>
-                <td>${KWH_STRING*30} kWh</td>
+                <td>${(KWH_STRING*30).toFixed(2)} kWh</td>
                 <td>${(PRICE_STRING*30).toFixed(2)} €</td>
             </tr>
             <tr>
                 <td>Anual</td>
-                <td>${KWH_STRING*365} kWh</td>
-                <td>${PRICE_STRING*365} €</td>
+                <td>${(KWH_STRING*365).toFixed(2)} kWh</td>
+                <td>${(PRICE_STRING*365).toFixed(2)} €</td>
             </tr>
         </table>
         `
