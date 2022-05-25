@@ -2,6 +2,7 @@ const devices = document.querySelectorAll("[data-device]")
 const potencia = document.querySelector("#potencia")
 const calcularButton = document.querySelector("#calcular")
 const dropdown = document.querySelector(".dropdown-content")
+const dropdownButton = document.querySelector("#dropdownButton")
 
 const DEVICE_LIST = 
 [{
@@ -48,6 +49,8 @@ devices.forEach(d => {
     d.addEventListener("click", e => {
         DEVICE_NAME = e.target.textContent
         POWER = DEVICE_LIST.find(x => x.name == DEVICE_NAME).power
+
+        dropdownButton.textContent = DEVICE_NAME
 
         potencia.value = POWER*1000
     })
