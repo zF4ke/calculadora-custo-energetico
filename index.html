@@ -13,12 +13,12 @@
         <div class="container bg">
           	<h1>Calculadora de custo energético doméstico por aparelho</h1>
           	<div class="section">
-            	<h2>Potência</h2>
-				<p>Insira a potência em watt (<em>W</em>) ou selecione eletrodoméstico para obter um valor médio.</p>
+            	<h2>Potência  (<em>P</em>)</h2>
+				<p>Insira a potência em watt (W) ou selecione eletrodoméstico para obter um valor médio.</p>
 				<div>
 					<label class="potencia" for="potencia">
 						<input id="potencia" type="number" value="1000" placeholder="1000" min="0">
-						<span class="unit"><em>W</em></span> 
+						<span class="unit">W</span> 
 					</label>
 					<span class="divider">ou</span>
 					<div id="dropdown" class="dropdown">
@@ -40,21 +40,21 @@
             	</div>
           	</div>
 			  <div class="section">
-				<h2>Tempo por dia</h2>
+				<h2>Tempo por dia (<em>&Delta;t</em>)</h2>
 				<p>Quantas hora o aparelho está ligado por dia?</p>
 				<div>
 					<label class="tempo" for="tempo">
 						<input id="tempo" type="number" value="1" placeholder="1" min="0" max="24">
-						<span class="unit"><em>h</em></span>
+						<span class="unit">h</span>
 					</label>
 				</div>
 			</div>
         	<div class="section">
-				<h2>Preço por <em>kWh</em></h2>
-				<p>Coloque aqui o preço por 1 <em>kWh</em> de energia.</p>
+				<h2>Preço por kWh</h2>
+				<p>Coloque aqui o preço por 1 kWh de energia.</p>
 				<label class="preco" for="preco">
 					<input id="preco" type="number" value="0.19270" placeholder="0.19270" min="0">
-					<span class="unit"><em>€</em></span>
+					<span class="unit">€</span>
 				</label>
         	</div>
 			<div class="calc">
